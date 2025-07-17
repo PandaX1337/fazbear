@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freddy Fazbear's Pizza - Official Site</title>
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="icon" href="assets/images/icon.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="header-content" style="display: flex; align-items: center; justify-content: center; position: relative; gap: 18px;">
+            <div class="pixel-corner pixel-corner-tl"></div>
+            <div class="pixel-corner pixel-corner-tr"></div>
+            <a href="#" id="logo-link" style="display: block; margin-right: 18px;">
+                <img src="assets/images/icon.png" alt="Logo Icon" id="logo-img" style="height: 130px; width: 130px; object-fit: contain; display: block; box-shadow: 0 6px 24px rgba(0,0,0,0.10);">
+            </a>
+            <h1 style="flex: 1; text-align: center; margin: 0;">FREDDY FAZBEAR'S PIZZA</h1>
+            <div style="width: 60px;"></div>
+            <div class="pixel-corner pixel-corner-bl"></div>
+            <div class="pixel-corner pixel-corner-br"></div>
+        </div>
+        <p class="tagline" style="text-align: center;">Where Fantasy and Fun Come to Life! Since 1983</p>
+    </header>
+    
+    <div class="marquee" style="overflow: hidden; position: relative; background: var(--primary); color: var(--secondary); box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-radius: 10px; margin: 15px 0;">
+        <div class="marquee-content" id="marquee-content" style="display: inline-block; position: absolute; left: 0; white-space: nowrap; will-change: transform;">
+            ✦ GRAND OPENING! ✦ 2 Large Pizzas for $15! ✦ Birthday Parties Only $99! ✦ Meet Freddy and Friends! ✦ Open 7 Days a Week! ✦
+        </div>
+    </div>
+    
+    <div class="navbar">
+        <ul class="nav-menu" style="display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 12px;">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="parties.html">Parties</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    
+    <main style="border: 4px double var(--secondary); box-shadow: 0 0 24px rgba(0,0,0,0.08); background: url('assets/textures/paper.png') repeat; border-radius: 18px;">
+        <div class="hero" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <img src="assets/images/1983.png" id="main-image" alt="Freddy Fazbear's Pizza 1983" style="display: block; margin: 0 auto;">
+            <div class="hero-overlay" style="text-align: center;">
+                <h2>Welcome to the Faztastic Experience!</h2>
+                <p>Pizza • Games • Animatronic Shows</p>
+                <a href="#animatronics" class="btn">Meet Our Stars</a>
+                <a href="menu.html" class="btn">View Menu</a>
+            </div>
+        </div>
+        
+        <div class="info-section">
+            <h2 class="neon-text">Fazbear Family Fun Center</h2>
+            <p>Home of the world-famous animatronic band! Enjoy our delicious pizza while watching Freddy and Friends perform live!</p>
+            
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>Hours of Operation</h3>
+                    <p>Monday-Thursday: 11AM - 9PM</p>
+                    <p>Friday-Saturday: 11AM - 11PM</p>
+                    <p>Sunday: 11AM - 8PM</p>
+                </div>
+                
+                <div class="info-card">
+                    <h3>Special Offers</h3>
+                    <p>Kids Eat Free on Tuesdays!</p>
+                    <p>Family Feast: 2 Large Pizzas + Pitcher of Soda - $24.99</p>
+                    <p>Birthday Package: Pizza, Cake & Party Room - $99</p>
+                </div>
+                
+                <div class="info-card">
+                    <h3>Arcade & Games</h3>
+                    <p>Over 50 Arcade Games!</p>
+                    <p>Prize Counter with Fazbear Merch</p>
+                    <p>Balloon Artist Weekends</p>
+                </div>
+            </div>
+        </div>
+        
+        <hr class="retro-divider">
+        
+        <div class="animatronics-section">
+            <h2 class="section-title" id="animatronics">Meet the Fazbear Band</h2>
+            
+            <div style="display: flex; justify-content: center;">
+                <div class="wood-frame" style="background: url('assets/textures/derevo.png') center/cover, linear-gradient(135deg, #a97c50 0%, #e2b07a 40%, #c69c6d 100%);">
+                    <img src="assets/images/general.png" alt="Freddy and Friends performing together" class="band-photo" id="band-photo">
+                    <img src="assets/images/vhs.gif" id="vhs-effect" style="display:none; position:absolute; left:0; top:0; width:100%; height:100%; border-radius:12px; pointer-events:none; z-index:2;" alt="VHS effect">
+                </div>
+            </div>
+            
+            <div class="animatronics">
+                <div class="animatronic-card">
+                    <div class="animatronic-image">
+                        <img src="assets/images/freddy.png" alt="Freddy Fazbear">
+                    </div>
+                    <div class="animatronic-info">
+                        <h3 class="animatronic-name">Freddy Fazbear</h3>
+                        <p class="animatronic-desc">The charming leader of the band! Freddy's smooth vocals and showmanship will have you singing along to all your favorite tunes from the show.</p>
+<a href="parties.html" class="btn">Schedule Performance</a>
+                    </div>
+                </div>
+                
+                <div class="animatronic-card">
+                    <div class="animatronic-image">
+                        <img src="assets/images/bonnie.png" alt="Bonnie the Bunny">
+                    </div>
+                    <div class="animatronic-info">
+                        <h3 class="animatronic-name">Bonnie the Bunny</h3>
+                        <p class="animatronic-desc">The rockstar bunny with electrifying guitar skills! Bonnie's solos will have you dancing in the aisles just like in the cartoon.</p>
+                        <a href="parties.html" class="btn">Schedule Performance</a>
+                    </div>
+                </div>
+                
+                <div class="animatronic-card">
+                    <div class="animatronic-image">
+                        <img src="assets/images/chica.png" alt="Chica the Chicken">
+                    </div>
+                    <div class="animatronic-info">
+                        <h3 class="animatronic-name">Chica the Chicken</h3>
+                        <p class="animatronic-desc">The sweet-voiced chef of the band! Chica sings beautiful harmonies while serving up delicious pizza for everyone.</p>
+                        <a href="parties.html" class="btn">Schedule Performance</a>
+                    </div>
+                </div>
+                
+                <div class="animatronic-card">
+                    <div class="animatronic-image">
+                        <img src="assets/images/foxy.png" alt="Foxy the Pirate Fox">
+                    </div>
+                    <div class="animatronic-info">
+                        <h3 class="animatronic-name">Foxy the Pirate Fox</h3>
+                        <p class="animatronic-desc">The adventurous pirate! Foxy performs exciting sea shanties from his ship stage, just like in your favorite episodes.</p>
+                        <a href="parties.html" class="btn">Schedule Performance</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin: 40px 0;">
+                <a href="parties.html" class="btn" style="padding: 12px 35px; font-size: 1.3rem;">Book Your Birthday Party!</a>
+            </div>
+        </div>
+    </main>
+    
+    <footer id="footer">
+        <div class="footer-content">
+            <h3>Freddy Fazbear's Pizza</h3>
+            <p>1234 Fazbear Lane, Hurricane, UT</p>
+            <p>☎️ 555-FAZ-BEAR</p>
+            
+            <div class="footer-links">
+                <a href="about.html#careers">Careers</a>
+                <a href="about.html#franchise">Franchise Info</a>
+            </div>
+            
+            <div class="disclaimer">
+                Fazbear Entertainment is not responsible for accidental dismemberment. Please supervise children at all times. 
+                Animatronics may move during non-performance hours - this is completely normal. Avoid the backstage area after hours.
+            </div>
+            
+            <div class="copyright">
+                © 1993 Freddy Fazbear's Pizza. All Rights Reserved. | 
+                Visitors: <span class="counter">10482</span>
+            </div>
+            <div class="disclaimer" style="margin-top: 18px; background: #ffe066; color: #a00; border: 2px dashed #a00; border-radius: 8px; padding: 10px; font-size: 0.95rem;">
+                <b>Disclaimer:</b> Fazbear Entertainment is not responsible for any psychological trauma, injuries, or damages caused by animatronics or staff. Please do not defecate on the floor. Supervise children at all times.
+            </div>
+        </div>
+    </footer>
+    
+    <audio id="logo-sound" src="assets/audio/laugh.mp3" preload="auto"></audio>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

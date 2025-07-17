@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Parties - Freddy Fazbear's Pizza</title>
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="icon" href="assets/images/icon.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="pixel-corner pixel-corner-tl"></div>
+            <div class="pixel-corner pixel-corner-tr"></div>
+            <h1>BIRTHDAY PARTIES</h1>
+            <p class="tagline">Make your child's birthday unforgettable!</p>
+            <div class="pixel-corner pixel-corner-bl"></div>
+            <div class="pixel-corner pixel-corner-br"></div>
+        </div>
+    </header>
+    
+    <div class="marquee" style="overflow: hidden; position: relative; background: var(--primary); color: var(--secondary); box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-radius: 10px; margin: 15px 0;">
+        <div class="marquee-content" id="marquee-content" style="display: inline-block; position: absolute; left: 0; white-space: nowrap; will-change: transform;">
+            ✦ GRAND OPENING! ✦ 2 Large Pizzas for $15! ✦ Birthday Parties Only $99! ✦ Meet Freddy and Friends! ✦ Open 7 Days a Week! ✦
+        </div>
+    </div>
+    
+    <div class="navbar">
+        <ul class="nav-menu" style="display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 12px;">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="parties.html" class="active">Parties</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    
+    <main style="border: 4px double var(--secondary); box-shadow: 0 0 24px rgba(0,0,0,0.08); background: #fffbe6; border-radius: 18px; padding: 20px; max-width: 900px; margin: 0 auto;">
+        <div class="party-section">
+            <h2 class="section-title"><i class='fas fa-birthday-cake'></i> Birthday Party Packages</h2>
+            <div class="party-packages" style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: center;">
+                <div class="menu-item-card" style="max-width: 300px;">
+                    <h4><i class="fas fa-star"></i> Basic Party</h4>
+                    <img src="assets/images/Freddy.png" alt="Basic Party" style="margin-bottom: 10px;">
+                    <p>Private party room for 2 hours, 1 animatronic, pizza, soda, goodie bag for birthday child</p>
+                    <p class="price">$99</p>
+                    <a href="#book" class="btn">Book Now</a>
+                </div>
+                <div class="menu-item-card" style="max-width: 300px;">
+                    <h4><i class="fas fa-crown"></i> Fazbear Deluxe</h4>
+                    <img src="assets/images/Bonnie.png" alt="Fazbear Deluxe" style="margin-bottom: 10px;">
+                    <p>3 hours, Freddy + friend, 2 pizzas, salad, 2 pitchers, goodie bags for all, birthday song</p>
+                    <p class="price">$199</p>
+                    <a href="#book" class="btn">Book Now</a>
+                </div>
+                <div class="menu-item-card" style="max-width: 300px;">
+                    <h4><i class="fas fa-gem"></i> Ultimate Experience</h4>
+                    <img src="assets/images/Foxy.png" alt="Ultimate Experience" style="margin-bottom: 10px;">
+                    <p>VIP room 4 hours, full band show, 3 pizzas, wings, 3 pitchers, premium bags, video message, plush toy</p>
+                    <p class="price">$299</p>
+                    <a href="#book" class="btn">Book Now</a>
+                </div>
+            </div>
+            <div class="party-info menu-note" id="book" style="margin-top: 40px;">
+                <h3><i class="fas fa-calendar-check"></i> Book Your Party</h3>
+                <form class="party-form">
+                    <div class="form-group">
+                        <label for="name">Parent's Name:</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Preferred Date:</label>
+                        <input type="date" id="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="package">Package:</label>
+                        <select id="package" required>
+                            <option value="">Select a package</option>
+                            <option value="basic">Basic Party ($99)</option>
+                            <option value="deluxe">Fazbear Deluxe ($199)</option>
+                            <option value="ultimate">Ultimate Experience ($299)</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn">Submit Booking Request</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <button id="scrollToTopButton" class="scroll-to-top-btn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <footer>
+        <div class="footer-content">
+            <h3>Freddy Fazbear's Pizza</h3>
+            <p>1234 Fazbear Lane, Hurricane, UT</p>
+            <p>☎️ 555-FAZ-BEAR</p>
+            
+            <div class="footer-links">
+                <a href="about.html#careers">Careers</a>
+                <a href="about.html#franchise">Franchise Info</a>
+            </div>
+            
+            <div class="copyright">
+                © 1993 Freddy Fazbear's Pizza. All Rights Reserved.
+            </div>
+            <div class="disclaimer" style="margin-top: 18px; background: #ffe066; color: #a00; border: 2px dashed #a00; border-radius: 8px; padding: 10px; font-size: 0.95rem;">
+                <b>Disclaimer:</b> Fazbear Entertainment is not responsible for any psychological trauma, injuries, or damages caused by animatronics or staff. Please do not defecate on the floor. Supervise children at all times.
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

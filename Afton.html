@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afton - Freddy Fazbear's Pizza</title>
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="icon" href="assets/images/icon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="pixel-corner pixel-corner-tl"></div>
+            <div class="pixel-corner pixel-corner-tr"></div>
+            <h1>AFTON</h1>
+            <p class="tagline">He always comes back...</p>
+            <div class="pixel-corner pixel-corner-bl"></div>
+            <div class="pixel-corner pixel-corner-br"></div>
+        </div>
+    </header>
+    <div class="navbar">
+        <ul class="nav-menu" style="display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 12px;">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="parties.html">Parties</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="Afton.html" class="active">Afton</a></li>
+        </ul>
+    </div>
+    <main style="border: 4px double var(--secondary); box-shadow: 0 0 24px rgba(0,0,0,0.18); background: #181818; border-radius: 18px; padding: 40px 0; min-height: 60vh; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <img src="assets/images/afton.png" alt="Afton" style="max-width: 90vw; max-height: 60vh; border-radius: 18px; box-shadow: 0 8px 32px rgba(0,0,0,0.7); margin-bottom: 30px;">
+        <audio id="afton-audio" src="assets/audio/laugh.mp3" autoplay preload="auto"></audio>
+        <p style="color: #ffe066; font-size: 1.3rem; text-align: center; margin-top: 10px; letter-spacing: 2px;">"I always come back"</p>
+    </main>
+    <button id="scrollToTopButton" class="scroll-to-top-btn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <footer>
+        <div class="footer-content">
+            <h3>Freddy Fazbear's Pizza</h3>
+            <p>1234 Fazbear Lane, Hurricane, UT</p>
+            <p>☎️ 555-FAZ-BEAR</p>
+            <div class="footer-links">
+                <a href="about.html#careers">Careers</a>
+                <a href="about.html#franchise">Franchise Info</a>
+            </div>
+            <div class="disclaimer" style="margin-top: 18px; background: #ffe066; color: #a00; border: 2px dashed #a00; border-radius: 8px; padding: 10px; font-size: 0.95rem;">
+                <b>Disclaimer:</b> Fazbear Entertainment is not responsible for any psychological trauma, injuries, or damages caused by animatronics or staff. Please do not defecate on the floor. Supervise children at all times.
+            </div>
+            <div class="copyright">
+                © 1993 Freddy Fazbear's Pizza. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Автоматическое воспроизведение звука при открытии
+        const audio = document.getElementById('afton-audio');
+        audio.volume = 0.7;
+        audio.play().catch(()=>{});
+    </script>
+</body>
+</html> 
